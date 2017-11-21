@@ -4,9 +4,7 @@ import { Component } from '@angular/core';
    selector: 'app-root' ,
    template: `
      <nav-bar></nav-bar>
-     <div> 
-        Welcome To MukeApss
-     </div>
+     <app-landing></app-landing>
    `
 })
 
