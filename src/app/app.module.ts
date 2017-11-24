@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { SignupComponent } from './signup/signup.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
     NavbarComponent, 
     LandingComponent, 
-    FooterComponent
+    FooterComponent, SignupComponent, ContactusComponent
   ],
   imports: [
     BrowserModule,

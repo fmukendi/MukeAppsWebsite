@@ -1,7 +1,9 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="https://www.creative-tim.com">MukeApps</a>
+            <a class="navbar-brand" href="https://www.creative-tim.com"
+            [routerLink]="['/landing']"
+            >MukeApps</a>
             <button class="navbar-toggler navbar-burger" type="button" 
             data-toggle="collapse" data-target="#navbarToggler" 
             aria-controls="navbarTogglerDemo02" aria-expanded="false" 
@@ -13,7 +15,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item" *ngIf="!isDocumentation()">
+                <!-- <li class="nav-item" *ngIf="!isDocumentation()">
                     <a class="nav-link" rel="tooltip" title="Follow us on Twitter" 
                     data-placement="bottom" href="https://twitter.com/CreativeTim" 
                     target="_blank">
@@ -45,22 +47,22 @@
                         <i class="fa fa-github"></i>
                         <p class="d-lg-none">GitHub</p>
                     </a>
-                </li>
+                </li> -->
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a href="http://pk2-angular.creative-tim.com/documentation/tutorial" 
-                    class="nav-link" target="_blank">
+                    <a [routerLink]="['/contactus']" 
+                    class="nav-link" >
                     <i class="nc-icon nc-book-bookmark"></i> 
-                    Documentation
+                    Contact Us
                     </a>
                 </li>
                 <!-- <li class="nav-item" *ngIf="isHome()">
                     <a href="https://www.creative-tim.com/product/paper-kit-2-pro?ref=pk2-free-local" target="_blank" class="btn btn-danger btn-round disabled">Upgrade to Pro</a>
                 </li> -->
                 <li class="nav-item" *ngIf="!isHome()">
-                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" 
-                    class="nav-link"><i class="nc-icon nc-layout-11"></i>Components</a>
-                    <a [routerLink]="['/home']" *ngIf="isDocumentation()" class="nav-link">
-                        Back to Kit</a>
+                    <a [routerLink]="['/signup']" *ngIf="!isDocumentation()" 
+                    class="nav-link"><i class="nc-icon nc-layout-11"></i>Sign in</a>
+                    <!-- <a [routerLink]="['/home']" *ngIf="isDocumentation()" class="nav-link">
+                        Sign in</a> -->
                 </li>
                 <li class="nav-item" *ngIf="isDocumentation()">
                     <a href="https://github.com/creativetimofficial/pk-free-angular/issues?ref=pk2-free-local" target="_blank" class="nav-link">Have an issue</a>

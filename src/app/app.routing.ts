@@ -4,9 +4,13 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LandingComponent } from './landing/landing.component';
+import { SignupComponent } from './signup/signup.component';
+import { ContactusComponent } from './contactus/contactus.component';
 const routes: Routes =
 [
-    { path: 'landing',          component: LandingComponent },
+    { path: 'landing', component: LandingComponent },
+    { path: 'signup', component: SignupComponent },
+    { path: 'contactus', component: ContactusComponent },
     { path: '', redirectTo: 'landing', pathMatch: 'full' }
 ];
 
