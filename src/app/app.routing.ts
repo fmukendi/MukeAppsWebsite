@@ -6,11 +6,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
 import { SignupComponent } from './signup/signup.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { ProjectsListComponent } from './projects/projects-list.component';
 const routes: Routes =
 [
     { path: 'landing', component: LandingComponent },
     { path: 'signup', component: SignupComponent },
     { path: 'contactus', component: ContactusComponent },
+    { path: 'projects', component: ProjectsListComponent },
     { path: '', redirectTo: 'landing', pathMatch: 'full' }
 ];
 

@@ -12,13 +12,19 @@ import { LandingComponent } from './landing/landing.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { ProjectsListComponent } from './projects/projects-list.component';
+import { ProjectThumbnailComponent } from './projects/project-thumbnail.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
     NavbarComponent, 
     LandingComponent, 
-    FooterComponent, SignupComponent, ContactusComponent
+    FooterComponent, 
+    SignupComponent, 
+    ContactusComponent, 
+    ProjectsListComponent,
+    ProjectThumbnailComponent
   ],
   imports: [
     BrowserModule,

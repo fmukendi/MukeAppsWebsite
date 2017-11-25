@@ -1,0 +1,41 @@
+
+      <!-- <div class="wrapper">
+          <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('../assets/img/fabio-mangione.jpg');">
+              <div class="filter"></div>
+          </div>
+          <div class="section profile-content">
+              <div>
+                  
+                  <div class="row">
+                    <div *ngFor="let project of projects" class="col-md-5">
+                      <project-thumbnail [event]="project"></project-thumbnail>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div> -->
+  
+          <div class="wrapper">
+              <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('../assets/img/fabio-mangione.jpg');">
+                  <div class="filter"></div>
+              </div>
+              <div class="section profile-content">
+                  <div class="container">
+                      <div class="owner">
+                          <div class="avatar">
+                              <img src="../assets/img/faces/joe-gardner-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                          </div>
+                          <div class="name">
+                              <h4 class="title">Projects<br /></h4>
+                             <!--  <h6 class="description">My Projects</h6> -->
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div *ngFor="let project of projects" class="col-md-4">
+                            <project-thumbnail [event]="project"></project-thumbnail>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+            </div>
+            
