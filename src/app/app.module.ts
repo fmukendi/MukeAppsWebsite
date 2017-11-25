@@ -15,6 +15,9 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { ProjectsListComponent } from './projects/projects-list.component';
 import { ProjectThumbnailComponent } from './projects/project-thumbnail.component';
 
+
+import { ProjectService } from './projects/shared/project.service';
+
 @NgModule({
   declarations: [
     AppComponent, 
@@ -33,7 +36,7 @@ import { ProjectThumbnailComponent } from './projects/project-thumbnail.componen
     RouterModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
