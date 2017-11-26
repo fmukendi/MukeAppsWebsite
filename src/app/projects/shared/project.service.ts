@@ -5,13 +5,14 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/do';
+import 'rxjs/add/operator/map';
 
 
 @Injectable()
 export class ProjectService {
 
   
-  private _projectsUrl = './api/projects/projects.json';
+  private _projectsUrl: string = './api/projects/projects.json';
 
   constructor(private _http: HttpClient) { 
 
@@ -23,8 +24,19 @@ export class ProjectService {
               .catch(this.handleError);
   }
 
+  getEvent(id: number): Observable<IProject> {
+    return this._http.get<IProject[]>(this._projectsUrl)
+              .map(res => { 
+                return res.find(x => x.id === id);
+              })
+              .catch(this.handleError);
+  }
+
+  
+
   private handleError(err: HttpErrorResponse) {
     console.error(err.message);
     return Observable.throw(err.message);
   }
 }
+

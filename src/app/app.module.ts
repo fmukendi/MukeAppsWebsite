@@ -13,11 +13,15 @@ import { LandingComponent } from './landing/landing.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
 import { ContactusComponent } from './contactus/contactus.component';
-import { ProjectsListComponent } from './projects/projects-list.component';
-import { ProjectThumbnailComponent } from './projects/project-thumbnail.component';
 import { Error404Component } from './errors/404.component';
 
-import { ProjectService } from './projects/shared/project.service';
+import {
+  ProjectsListComponent,
+  ProjectThumbnailComponent,
+  ProjectService,
+  ProjectDetailsComponent
+} from './projects/index';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +33,8 @@ import { ProjectService } from './projects/shared/project.service';
     ContactusComponent, 
     ProjectsListComponent,
     ProjectThumbnailComponent,
-    Error404Component
+    Error404Component,
+    ProjectDetailsComponent
   ],
   imports: [
     BrowserModule,
