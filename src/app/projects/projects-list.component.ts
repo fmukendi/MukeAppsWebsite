@@ -8,11 +8,17 @@ import { IProject } from './shared/project.model';
 })
 export class ProjectsListComponent implements OnInit {
   projects: IProject[];
+  errorMessage: string;
 
   constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
-    this.projects = this.projectService.getEvents();
-  }
+    this.projectService.getEvents()
+                        .subscribe(projects => {
+                          this.projects = projects;
+                        },
+                        error => this.errorMessage = <any>error);  
+                        
+  } 
 
 }
