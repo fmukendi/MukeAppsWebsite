@@ -15,7 +15,7 @@ import { SignupComponent } from './signup/signup.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ProjectsListComponent } from './projects/projects-list.component';
 import { ProjectThumbnailComponent } from './projects/project-thumbnail.component';
-
+import { Error404Component } from './errors/404.component';
 
 import { ProjectService } from './projects/shared/project.service';
 
@@ -28,7 +28,8 @@ import { ProjectService } from './projects/shared/project.service';
     SignupComponent, 
     ContactusComponent, 
     ProjectsListComponent,
-    ProjectThumbnailComponent
+    ProjectThumbnailComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
