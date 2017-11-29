@@ -1,0 +1,195 @@
+
+[
+  {
+      "id": 1,
+      "name": "Leaf Rake",
+      "productCode": "GDN-0011",
+      "date": "9/26/2036",
+      "time": "10:00 am",
+      "description": "Leaf rake with 48-inch wooden handle.",
+      "price": 19.95,
+      "starRating": 3.2,
+      "imageUrl": "./assets/images/angularconnect-shield.png",
+      "sessions": [
+        {
+          "id": 1,
+          "name": "Using Angular 4 Pipes",
+          "presenter": "Peter Bacon Darwin",
+          "duration": 1,
+          "level": "Intermediate",
+          "abstract": "Learn all about the new pipes in Angular 4, both how to write them, and how to get the new AI CLI to write them for you. Given by the famous PBD, president of Angular University (formerly Oxford University)",
+          "voters": ["bradgreen", "igorminar", "martinfowler"]
+        },{
+          "id": 2,
+          "name": "Using Angular 4 Pipes",
+          "presenter": "Peter Bacon Darwin",
+          "duration": 1,
+          "level": "Intermediate",
+          "abstract": "Learn all about the new pipes in Angular 4, both how to write them, and how to get the new AI CLI to write them for you. Given by the famous PBD, president of Angular University (formerly Oxford University)",
+          "voters": ["bradgreen", "igorminar", "martinfowler"]
+        },{
+          "id": 3,
+          "name": "Using Angular 4 Pipes",
+          "presenter": "Peter Bacon Darwin",
+          "duration": 1,
+          "level": "Intermediate",
+          "abstract": "Learn all about the new pipes in Angular 4, both how to write them, and how to get the new AI CLI to write them for you. Given by the famous PBD, president of Angular University (formerly Oxford University)",
+          "voters": ["bradgreen", "igorminar", "martinfowler"]
+        }],
+        "location": {
+          "address": "1057 DT",
+          "city": "London",
+          "country": "England"
+        }
+  },
+  {
+      "id": 2,
+      "name": "Garden Cart",
+      "productCode": "GDN-0023",
+      "date": "9/26/2036",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "starRating": 4.2,
+      "imageUrl": "/assets/images/ng-nl.png",
+      "sessions": [
+        {
+          "id": 1,
+          "name": "Using Angular 4 Pipes",
+          "presenter": "Peter Bacon Darwin",
+          "duration": 1,
+          "level": "Intermediate",
+          "abstract": "Learn all about the new pipes in Angular 4, both how to write them, and how to get the new AI CLI to write them for you. Given by the famous PBD, president of Angular University (formerly Oxford University)",
+          "voters": ["bradgreen", "igorminar", "martinfowler"]
+        },{
+          "id": 2,
+          "name": "Using Angular 4 Pipes",
+          "presenter": "Peter Bacon Darwin",
+          "duration": 1,
+          "level": "Intermediate",
+          "abstract": "Learn all about the new pipes in Angular 4, both how to write them, and how to get the new AI CLI to write them for you. Given by the famous PBD, president of Angular University (formerly Oxford University)",
+          "voters": ["bradgreen", "igorminar", "martinfowler"]
+        },{
+          "id": 3,
+          "name": "Using Angular 4 Pipes",
+          "presenter": "Peter Bacon Darwin",
+          "duration": 1,
+          "level": "Intermediate",
+          "abstract": "Learn all about the new pipes in Angular 4, both how to write them, and how to get the new AI CLI to write them for you. Given by the famous PBD, president of Angular University (formerly Oxford University)",
+          "voters": ["bradgreen", "igorminar", "martinfowler"]
+        }]
+  },
+  {
+      "id": 5,
+      "name": "Hammer",
+      "productCode": "TBX-0048",
+      "date": "9/26/2036",
+      "description": "Curved claw steel hammer",
+      "price": 8.9,
+      "starRating": 4.8,
+      "imageUrl": "/assets/images/ng-conf.png",
+      "sessions": [
+        {
+          "id": 1,
+          "name": "Using Angular 4 Pipes",
+          "presenter": "Peter Bacon Darwin",
+          "duration": 1,
+          "level": "Intermediate",
+          "abstract": "Learn all about the new pipes in Angular 4, both how to write them, and how to get the new AI CLI to write them for you. Given by the famous PBD, president of Angular University (formerly Oxford University)",
+          "voters": ["bradgreen", "igorminar", "martinfowler"]
+        },{
+          "id": 2,
+          "name": "Using Angular 4 Pipes",
+          "presenter": "Peter Bacon Darwin",
+          "duration": 1,
+          "level": "Intermediate",
+          "abstract": "Learn all about the new pipes in Angular 4, both how to write them, and how to get the new AI CLI to write them for you. Given by the famous PBD, president of Angular University (formerly Oxford University)",
+          "voters": ["bradgreen", "igorminar", "martinfowler"]
+        },{
+          "id": 3,
+          "name": "Using Angular 4 Pipes",
+          "presenter": "Peter Bacon Darwin",
+          "duration": 1,
+          "level": "Intermediate",
+          "abstract": "Learn all about the new pipes in Angular 4, both how to write them, and how to get the new AI CLI to write them for you. Given by the famous PBD, president of Angular University (formerly Oxford University)",
+          "voters": ["bradgreen", "igorminar", "martinfowler"]
+        }]
+  },
+  {
+      "id": 8,
+      "name": "Saw",
+      "productCode": "TBX-0022",
+      "date": "9/26/2036",
+      "description": "15-inch steel blade hand saw",
+      "price": 11.55,
+      "starRating": 3.7,
+      "imageUrl": "/assets/images/basic-shield.png",
+      "location": {
+        "address": "1057 DT",
+        "city": "London",
+        "country": "England"
+      },
+      "sessions": [
+        {
+          "id": 1,
+          "name": "Using Angular 4 Pipes",
+          "presenter": "Peter Bacon Darwin",
+          "duration": 1,
+          "level": "Intermediate",
+          "abstract": "Learn all about the new pipes in Angular 4, both how to write them, and how to get the new AI CLI to write them for you. Given by the famous PBD, president of Angular University (formerly Oxford University)",
+          "voters": ["bradgreen", "igorminar", "martinfowler"]
+        },{
+          "id": 2,
+          "name": "Using Angular 4 Pipes",
+          "presenter": "Peter Bacon Darwin",
+          "duration": 1,
+          "level": "Intermediate",
+          "abstract": "Learn all about the new pipes in Angular 4, both how to write them, and how to get the new AI CLI to write them for you. Given by the famous PBD, president of Angular University (formerly Oxford University)",
+          "voters": ["bradgreen", "igorminar", "martinfowler"]
+        },{
+          "id": 3,
+          "name": "Using Angular 4 Pipes",
+          "presenter": "Peter Bacon Darwin",
+          "duration": 1,
+          "level": "Intermediate",
+          "abstract": "Learn all about the new pipes in Angular 4, both how to write them, and how to get the new AI CLI to write them for you. Given by the famous PBD, president of Angular University (formerly Oxford University)",
+          "voters": ["bradgreen", "igorminar", "martinfowler"]
+        }]
+  },
+  {
+      "id": 10,
+      "name": "Video Game Controller",
+      "productCode": "GMG-0042",
+      "date": "9/26/2036",
+      "description": "Standard two-button video game controller",
+      "price": 35.95,
+      "starRating": 4.6,
+      "imageUrl": "/assets/images/ng-vegas.png",
+      "sessions": [
+        {
+          "id": 1,
+          "name": "Using Angular 4 Pipes",
+          "presenter": "Peter Bacon Darwin",
+          "duration": 1,
+          "level": "Intermediate",
+          "abstract": "Learn all about the new pipes in Angular 4, both how to write them, and how to get the new AI CLI to write them for you. Given by the famous PBD, president of Angular University (formerly Oxford University)",
+          "voters": ["bradgreen", "igorminar", "martinfowler"]
+        },{
+          "id": 2,
+          "name": "Using Angular 4 Pipes",
+          "presenter": "Peter Bacon Darwin",
+          "duration": 1,
+          "level": "Intermediate",
+          "abstract": "Learn all about the new pipes in Angular 4, both how to write them, and how to get the new AI CLI to write them for you. Given by the famous PBD, president of Angular University (formerly Oxford University)",
+          "voters": ["bradgreen", "igorminar", "martinfowler"]
+        },{
+          "id": 3,
+          "name": "Using Angular 4 Pipes",
+          "presenter": "Peter Bacon Darwin",
+          "duration": 1,
+          "level": "Intermediate",
+          "abstract": "Learn all about the new pipes in Angular 4, both how to write them, and how to get the new AI CLI to write them for you. Given by the famous PBD, president of Angular University (formerly Oxford University)",
+          "voters": ["bradgreen", "igorminar", "martinfowler"]
+        }]
+  }
+]
+
