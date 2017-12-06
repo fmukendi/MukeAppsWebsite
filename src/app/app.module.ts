@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -11,17 +12,19 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { SignupComponent } from './signup/signup.component';
+import { SignupComponent } from './user/signup/signup.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { Error404Component } from './errors/404.component';
 
 import {
   ProjectsListComponent,
   ProjectThumbnailComponent,
+  ProjectDetailsComponent,
   ProjectService,
-  ProjectDetailsComponent
+  ProjectRouteActivator
 } from './projects/index';
 import { ProjectCreateComponent } from './projects/project-create/project-create.component';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -36,7 +39,8 @@ import { ProjectCreateComponent } from './projects/project-create/project-create
     ProjectThumbnailComponent,
     Error404Component,
     ProjectDetailsComponent,
-    ProjectCreateComponent
+    ProjectCreateComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +50,10 @@ import { ProjectCreateComponent } from './projects/project-create/project-create
     RouterModule,
     AppRoutingModule
   ],
-  providers: [ProjectService],
+  providers: [
+    ProjectService,
+    ProjectRouteActivator
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
