@@ -21,6 +21,7 @@ import {
   ProjectService,
   ProjectDetailsComponent
 } from './projects/index';
+import { ProjectCreateComponent } from './projects/project-create/project-create.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import {
     ProjectsListComponent,
     ProjectThumbnailComponent,
     Error404Component,
-    ProjectDetailsComponent
+    ProjectDetailsComponent,
+    ProjectCreateComponent
   ],
   imports: [
     BrowserModule,

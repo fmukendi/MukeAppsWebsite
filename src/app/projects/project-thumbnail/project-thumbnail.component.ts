@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./project-thumbnail.component.scss']
 })
 export class ProjectThumbnailComponent implements OnInit {
-  @Input() event:any;
+  @Input() event: any;
 
   constructor() { }
 
@@ -14,9 +14,10 @@ export class ProjectThumbnailComponent implements OnInit {
   }
   
   getStartTimeStyle() {
-    if (this.event && this.event.time === '8:00 am')
-      return {color: '#003300', 'font-weight': 'bold'}
-    return {}
+    if (this.event && this.event.time === '8:00 am') {
+      return {color: '#003300', 'font-weight': 'bold'};
+    }
+    return {};
   }
 
 

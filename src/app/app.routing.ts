@@ -9,6 +9,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { ProjectsListComponent } from './projects/projects-list.component';
 import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
 import { Error404Component } from './errors/404.component';
+import { ProjectCreateComponent } from './projects/project-create/project-create.component';
 
 const routes: Routes =
 [
@@ -17,6 +18,7 @@ const routes: Routes =
     { path: 'contactus', component: ContactusComponent },
     { path: 'projects', component: ProjectsListComponent },
     { path: 'project/:id', component: ProjectDetailsComponent},
+    { path: 'projectCreate', component: ProjectCreateComponent },
     { path: '', redirectTo: 'landing', pathMatch: 'full' },
     { path: '**', component: Error404Component }
 ];
