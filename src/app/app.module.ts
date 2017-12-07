@@ -24,8 +24,6 @@ import {
   ProjectRouteActivator
 } from './projects/index';
 import { ProjectCreateComponent } from './projects/project-create/project-create.component';
-import { UserComponent } from './user/user.component';
-
 
 @NgModule({
   declarations: [
@@ -39,8 +37,7 @@ import { UserComponent } from './user/user.component';
     ProjectThumbnailComponent,
     Error404Component,
     ProjectDetailsComponent,
-    ProjectCreateComponent,
-    UserComponent
+    ProjectCreateComponent
   ],
   imports: [
     BrowserModule,

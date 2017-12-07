@@ -21,7 +21,8 @@ const routes: Routes =
     { path: 'project/:id', component: ProjectDetailsComponent, canActivate: [ProjectRouteActivator]},
     { path: '404', component: Error404Component },
     { path: 'projectCreate', component: ProjectCreateComponent },
-    { path: '', redirectTo: 'landing', pathMatch: 'full' }
+    { path: '', redirectTo: 'landing', pathMatch: 'full' },
+    { path: 'user', loadChildren: 'app/user/user.module#UserModule'}
 ];
 
 @NgModule({
