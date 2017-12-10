@@ -1,3 +1,4 @@
+import { AuthService } from './user/auth.service';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -49,7 +50,8 @@ import { ProjectCreateComponent } from './projects/project-create/project-create
   ],
   providers: [
     ProjectService,
-    ProjectRouteActivator
+    ProjectRouteActivator,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
