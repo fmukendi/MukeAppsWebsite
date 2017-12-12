@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
 
     constructor(public location: Location, 
                 private element: ElementRef,
-                private authService: AuthService
+                private auth: AuthService
             ) {
         this.sidebarVisible = false;
     }
@@ -69,17 +69,6 @@ export class NavbarComponent implements OnInit {
             return false;
         }
     }
-
-    isUserAuthenticated() {
-       let isUserIdentified: boolean;
-
-       isUserIdentified = false;
-
-       if (   this.authService.currentUser.firstName
-           && this.authService.currentUser.lastName ) {
-          isUserIdentified = true;
-       }
-
-       return isUserIdentified;
-    }
 }
+
+

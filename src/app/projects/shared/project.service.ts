@@ -20,7 +20,7 @@ export class ProjectService {
   }
   getEvents(): Observable<IProject[]> {
     return this._http.get<IProject[]>(this._projectsUrl)
-              .do(data => console.log('All: ' + JSON.stringify(data)))
+              .do(data => null ) // console.log('All: ' + JSON.stringify(data))
               .catch(this.handleError);
   }
 

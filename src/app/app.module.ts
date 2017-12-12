@@ -13,7 +13,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { SignupComponent } from './user/signup/signup.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { Error404Component } from './errors/404.component';
 
@@ -32,7 +31,6 @@ import { ProjectCreateComponent } from './projects/project-create/project-create
     NavbarComponent, 
     LandingComponent, 
     FooterComponent, 
-    SignupComponent, 
     ContactusComponent, 
     ProjectsListComponent,
     ProjectThumbnailComponent,

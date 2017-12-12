@@ -1,3 +1,4 @@
+import { SignupComponent } from './signup/signup.component';
 import { AuthService } from './auth.service';
 import { AppErrorHandler } from './../errors/model/app-error-handler';
 import { NgModule, ErrorHandler } from '@angular/core';
@@ -22,7 +23,8 @@ import { AdminComponent } from './admin/admin.component';
   [ 
       LoginComponent, 
       ProfileComponent, 
-      AdminComponent
+      AdminComponent,
+      SignupComponent
   ], providers: [
     
           { 

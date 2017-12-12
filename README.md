@@ -54,4 +54,4 @@ git add -u looks at all the already tracked files and stages the changes to thos
 
 git add -A is a handy shortcut for doing both of those.
 
-You can test the differences out with something like this (note that for Git version 2.x your output for  git add . git status will be different):
+You can test the differences out with something like this (note that for Git version 2.x your output for  git add . git status will be different):git 

@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
       private router: Router, @Inject(DOCUMENT, ) private document: any, 
       private element: ElementRef, public location: Location) {}
   ngOnInit() {
-      
+
       var navbar: HTMLElement = this.element.nativeElement.children[0].children[0];
       this._router = this.router
                          .events
@@ -65,7 +65,7 @@ export class AppComponent implements OnInit {
   removeFooter() {
       var titlee = this.location.prepareExternalUrl(this.location.path());
       titlee = titlee.slice( 1 );
-      if (titlee === 'signup' || titlee === 'nucleoicons') {
+      if (titlee === 'signup') {
           return false;
       }else {
           return true;
