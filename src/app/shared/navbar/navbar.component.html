@@ -55,7 +55,7 @@
                 <!-- <li class="nav-item" *ngIf="isHome()">
                     <a href="https://www.creative-tim.com/product/paper-kit-2-pro?ref=pk2-free-local" target="_blank" class="btn btn-danger btn-round disabled">Upgrade to Pro</a>
                 </li> -->
-                <li class="nav-item" *ngIf="!isHome()">
+                <li class="nav-item">
                     <a [routerLink]="['/user/login']" *ngIf="!auth.isAuthenticated()"
                     class="nav-link"><i class="nc-icon nc-layout-11"></i>Log in</a>
                     <a [routerLink]="['/user/signup']" *ngIf="auth.isAuthenticated()"

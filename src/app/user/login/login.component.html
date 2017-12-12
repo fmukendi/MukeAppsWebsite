@@ -21,13 +21,17 @@
                             autocomplete="off" #loginForm="ngForm" (ngSubmit)="login(loginForm.value)" 
                             novalidate>
                                 <label>Email</label>
-                                <input type="text" class="form-control" placeholder="Email" required>
+                                <input type="text" class="form-control"
+                                id="email" name="email" (ngModel)="email"
+                                placeholder="Email" required>
   
                                 <label>Password</label>
-                                <input type="password" class="form-control" placeholder="Password" required>
+                                <input type="password" class="form-control" 
+                                id="password" name="password" (ngModel)="password" 
+                                placeholder="Password" required>
                                 <button class="btn btn-danger btn-block btn-round"
-                                type="submit" [disabled]="loginForm.invalid"
-                                >Log In </button>
+                                type="submit" [disabled]="loginForm.invalid">Log In </button>
+                                
                             </form>
                             <div class="forgot">
                                 <a href="#" class="btn btn-link btn-danger">Sign Up</a>
@@ -42,4 +46,3 @@
             </div>
     </div>
   </div>
-  
