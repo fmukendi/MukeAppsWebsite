@@ -32,8 +32,7 @@ import { AdminComponent } from './admin/admin.component';
             useClass : AppErrorHandler // angular error only console.log ... 
                                        // with this one , we can do more
                                        // I thing it will be only for this module
-          },
-          AuthService
+          }
       ]
 })
 export class UserModule { }

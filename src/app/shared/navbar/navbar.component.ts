@@ -2,6 +2,7 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { AuthService } from '../../user/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-navbar',
@@ -13,7 +14,8 @@ export class NavbarComponent implements OnInit {
 
     constructor(public location: Location, 
                 private element: ElementRef,
-                private auth: AuthService
+                private auth: AuthService,
+                private router:Router
             ) {
         this.sidebarVisible = false;
     }
@@ -69,6 +71,11 @@ export class NavbarComponent implements OnInit {
             return false;
         }
     }
+
+    logOut() {
+        this.auth.logout();
+        this.router.navigate(['/user/login']);
+      }
 }
 
 
