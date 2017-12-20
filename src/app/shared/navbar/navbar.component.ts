@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
 
     constructor(public location: Location, 
                 private element: ElementRef,
-                private auth: AuthService,
+                public auth: AuthService,
                 private router: Router 
             ) {
         this.sidebarVisible = false;
@@ -57,15 +57,6 @@ export class NavbarComponent implements OnInit {
         let titlee = this.location.prepareExternalUrl(this.location.path());
 
         if (titlee === '/home' ) {
-            return true;
-        }else {
-            return false;
-        }
-    } 
-    isDocumentation() {
-        let titlee = this.location.prepareExternalUrl(this.location.path());
-        
-        if (titlee === '/documentation' ) {
             return true;
         }else {
             return false;

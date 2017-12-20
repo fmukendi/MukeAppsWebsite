@@ -21,7 +21,8 @@ import {
   ProjectThumbnailComponent,
   ProjectDetailsComponent,
   ProjectService,
-  ProjectRouteActivator
+  ProjectRouteActivator,
+  ProjectsGroupRouteActivator
 } from './projects/index';
 import { ProjectCreateComponent } from './projects/project-create/project-create.component';
 
@@ -49,6 +50,7 @@ import { ProjectCreateComponent } from './projects/project-create/project-create
   providers: [
     ProjectService,
     ProjectRouteActivator,
+    ProjectsGroupRouteActivator,
     AuthService
   ],
   bootstrap: [AppComponent]
