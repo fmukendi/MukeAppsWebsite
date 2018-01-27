@@ -1,6 +1,7 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ export class LoginComponent implements OnInit {
   test: Date = new Date();
   email: String;
   password: String;
-  
+
   constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit() {

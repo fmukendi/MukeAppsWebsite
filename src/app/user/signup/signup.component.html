@@ -6,22 +6,36 @@
                   <div class="col-lg-4 col-sm-6 mr-auto ml-auto">
                       <div class="card card-register">
                           <h3 class="title">Register</h3>
-                          <form class="register-form">
+                          <form class="register-form"
+                          #signUpForm="ngForm" 
+                          (ngSubmit)="signUp(signUpForm.value, signUpForm)"
+                          >
                               <label>Email</label>
-                              <input type="text" class="form-control" placeholder="Email">
+                              <input type="email" class="form-control" 
+                              (ngModel)="email"
+                              placeholder="Email" name="email" required>
 
                               <label>Password</label>
-                              <input type="password" class="form-control" placeholder="Password">
+                              <input type="password" class="form-control" 
+                              (ngModel)="password1"
+                              placeholder="Password" name="password1" required>
 
-                              <label>Reenter Password</label>
-                              <input type="password" class="form-control" placeholder="Password">
-                              <button class="btn btn-danger btn-block btn-round">Register</button>
+                              <label>Re-enter Password</label>
+                              <input type="password" class="form-control" 
+                              (ngModel)="password2"
+                              placeholder="Re-enter Password" name="password2" required>
+                              <button class="btn btn-danger btn-block btn-round">
+                                  Register
+                                </button>
+
+                              <!-- {{ signUpForm.value | json}} -->
                           </form>
                       </div>
                   </div>
               </div>
               <div class="footer register-footer text-center">
-                  <h6>&copy;{{test | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by Creative Tim</h6>
+                  <h6>&copy;{{test | date: 'yyyy'}}, made with 
+                      <i class="fa fa-heart heart"></i> by MukeApps</h6>
               </div>
           </div>
   </div>
